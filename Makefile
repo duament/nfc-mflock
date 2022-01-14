@@ -11,11 +11,11 @@ OBJECTS  := $(SOURCES:$(SRCDIR)/%.c=$(OBJDIR)/%.o)
 
 _dummy := $(shell mkdir -p obj)
 
-all: nfc-mklock
+all: nfc-mflock
 
 $(OBJECTS): $(OBJDIR)/%.o : $(SRCDIR)/%.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
-nfc-mklock: $(OBJECTS)
+nfc-mflock: $(OBJECTS)
 	$(CC) $(OBJECTS) $(CFLAGS) $(LDFLAGS) -o $@
 

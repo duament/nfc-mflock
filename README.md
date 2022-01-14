@@ -1,7 +1,7 @@
 # nfc-mflock
 A simple utility to lock block0 of UFUID cards.
 
-    Usage: nfc-mklock [OPTIONS] [LOCK COMMAND]
+    Usage: nfc-mflock [OPTIONS] [LOCK COMMAND]
     Options:
             -h      Help. Print this message.
             -q      Quiet mode. Suppress output of READER and CARD data (improves timing).
